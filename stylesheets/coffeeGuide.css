@@ -79,7 +79,7 @@
     animation-delay: 0.6s;
 }
 
-/* 2xs = (two extra small) */
+/* xxs = (extra extra small) */
 @media (min-width: 320px) {
     .container {
         max-width: 320px;
@@ -141,7 +141,7 @@
         height: auto;
     }
     .guide-cards {
-        width: 460px;
+        width: 260px;
     }
     #home-img-container {
         display: flex;
@@ -152,7 +152,8 @@
         margin-top: -3em;
     }
     .guide-imgs {
-        width: 150px;
+        margin-top: 20px;
+        width: 180px;
         border-radius: 7px;
     }
     .guide-desc {
@@ -174,7 +175,18 @@
         justify-content: center;
         height: 250px;
     }
+    .guide-imgs {
+        width: 180px;
+        border-radius: 7px;
+    }
+    .guide-desc {
+        width: 22ch;
+    }
+    .guide-cards {
+        width: 460px;
+    }
 }
+
 /* sm = (small) */
 @media (min-width: 640px) {
     .container {
