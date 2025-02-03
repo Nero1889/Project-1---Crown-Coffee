@@ -58,6 +58,11 @@
     font-size: var(--size-xl);
     margin-top: 15px;
 }
+#pizza-desc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #pizza-desc {
     text-align: center;
     margin-bottom: 2rem;
@@ -138,16 +143,8 @@
     animation-delay: 0.6s;
 }
 
-
-
-/* xs = (extra small) */
-@media (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
     .menu-nav a {
         font-size: var(--size-sm);
     }
@@ -168,6 +165,55 @@
         margin-bottom: 2rem;
         font-size: var(--size-sm);
     }
+    .breakfast-container, .sandwich-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 220px;
+        height: auto;
+        padding-top: 30px;
+    }
+    .desserts-container {
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: auto;
+        padding-top: 30px;
+    } 
+    .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-nav a:nth-child(4) {
+       margin-top: 0px;
+    }
+}
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+    .section {
+        margin-top: 5rem;
+    }
+    .menu-nav a:nth-child(4) {
+        margin-top: 15px;
+    }
+    #pizza-desc {
+        font-size: var(--size-lg);
+        width: 50ch;
+    }
+    .breakfast-container, .sandwich-container {
+        display: flex;
+        flex-direction: row;
+        width: 460px;
+    }
+    .desserts-container {
+        display: flex;
+        flex-direction: row;
+        width: 460px;
+    } 
 }
 
 /* sm = (small) */
@@ -178,6 +224,10 @@
     .section {
         margin-top: 5rem;
     }
+    .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .menu-nav a {
         font-size: var(--size-base);
     }
@@ -186,9 +236,6 @@
     }
     .menu-title {
         font-size: var(--size-4xl);
-    }
-    #pizza-desc {
-        font-size: var(--size-base);
     }
 }
 
@@ -200,11 +247,17 @@
     .section {
         margin-top: 5rem;
     }
+    .menu-nav {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
     #breakfast-hours {
         font-size: var(--size-xl);
     }
     #pizza-desc {
         font-size: var(--size-lg);
+        width: 70ch;
     }
 }
 
