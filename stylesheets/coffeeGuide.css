@@ -218,7 +218,7 @@
         width: 250px;
     }
     .guide-imgs {
-        width: 150px;
+        width: 180px;
         border-radius: 7px;
     }
     .guide-desc {
@@ -290,10 +290,10 @@
         width: 400px;
     }
     .guide-container {
-        padding-left: 55px;
+        padding-left: 40px;
     }
     .guide-desc {
-        width: 40ch;
+        width: 35ch;
     }
     .guide-imgs {
         width: 200px;
@@ -325,7 +325,7 @@
         width: 770px;
     }
     .guide-desc {
-        width: 50ch;
+        width: 45ch;
     }
     #guide-img {
         width: 500px;
