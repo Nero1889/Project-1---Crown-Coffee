@@ -40,12 +40,18 @@
     margin-top: 80em;
     z-index: -1;
 }
+.guide-title {
+    color: var(--txt)
+}
+.guide-desc {
+    width: 50ch;
+}
 .guide-container {
     margin-top: 20px;
     border: 1px solid var(--txt2);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 2em;
     backdrop-filter: blur(10px);
     border-radius: 25px;
@@ -53,12 +59,7 @@
     opacity: 0;  
     transform: translateY(20px); 
     transition: opacity 0.5s ease, transform 0.5s ease; 
-}
-.guide-title {
-    color: var(--txt)
-}
-.guide-desc {
-    width: 50ch;
+    height: 425px;
 }
 #top-icon {
     position: absolute;
@@ -78,10 +79,10 @@
     animation-delay: 0.6s;
 }
 
-/* xs = (extra small) */
-@media (min-width: 475px) {
+/* 2xs = (two extra small) */
+@media (min-width: 320px) {
     .container {
-        max-width: 475px;
+        max-width: 320px;
     }
     .section {
         margin-top: 5rem;
@@ -124,6 +125,21 @@
         align-items: center;
         justify-content: center;
     }
+    .guide-container {
+        margin-top: 20px;
+        border: 1px solid var(--txt2);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 2em;
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 1rem;
+        opacity: 0;  
+        transform: translateY(20px); 
+        transition: opacity 0.5s ease, transform 0.5s ease; 
+        height: auto;
+    }
     .guide-cards {
         width: 460px;
     }
@@ -141,6 +157,22 @@
     }
     .guide-desc {
         width: 22ch;
+    }
+}
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+    .section {
+        margin-top: 5rem;
+    }
+    .guide-container {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        height: 250px;
     }
 }
 /* sm = (small) */
@@ -244,6 +276,9 @@
     }
     #guide-img {
         width: 400px;
+    }
+    .guide-container {
+        padding-left: 55px;
     }
     .guide-desc {
         width: 40ch;
