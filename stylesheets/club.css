@@ -50,10 +50,10 @@ textarea {
     background-color: #4b4244;
 }
 
-/* xs = (extra small) */
-@media (min-width: 475px) {
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
     .container {
-        max-width: 475px;
+        max-width: 320px;
     }
     .section {
         margin-top: 5rem;
@@ -71,6 +71,16 @@ textarea {
     }
     #club-desc {
         width: 30ch;
+    }
+}
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+    .section {
+        margin-top: 5rem;
     }
 }
 
