@@ -141,6 +141,48 @@
     animation-delay: 0.5s;
 }
 
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    .section {
+        margin-top: 5rem;
+    }
+    .logo {
+        width: 150px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 50px;
+    }
+    #home-title {
+        color: var(--txt);
+        font-weight: normal;
+        font-size: var(--size-3xl);
+        text-align: center;
+    }
+    #home-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-img {
+        width: 250px;
+        border-radius: 11px;
+        animation: opacity .7s;
+    }
+    #description-setting-container {
+        margin-top: -36em;
+        max-width: 45ch;
+        font-size: var(--size-xs);
+    }
+    #description-eats-container {
+        margin-top: -19.5em;
+        max-width: 46ch;
+        font-size: var(--size-xs);
+    }
+}
+
 /* xs = (extra small) */
 @media (min-width: 475px) {
     .container {
@@ -184,11 +226,6 @@
     #home-img {
         width: 250px;
     }
-    #home-img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     #description-title {
         font-size: var(--size-2xl);
         margin-bottom: 1.5rem;
@@ -198,14 +235,27 @@
         color: #a09393;
     }
     #description-setting-container {
-        margin-top: -40em;
+        margin-top: -38.5em;
         max-width: 40ch;
+        font-size: var(--size-base);
     }
     #description-eats-container {
-        margin-top: -22em;
+        margin-top: -20.5em;
         max-width: 40ch;
+        font-size: var(--size-base);
     }
 }
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;            /* Maybe not necessary! */
+    }
+    .section {
+        margin-top: 5rem;
+    }
+}
+
 /* sm = (small) */
 @media (min-width: 640px) {
     .container {
@@ -257,12 +307,6 @@
     }
     .section {
         margin-top: 5rem;
-    }
-    .logo {
-        width: 150px;
-        position: absolute;
-        margin-top: 35px;
-        margin-left: 50px;
     }
     .header-menu {
         display: flex;
