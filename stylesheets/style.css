@@ -40,7 +40,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    /* font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #27170e, black,
     #27170e);
     color: var(--txt2);
