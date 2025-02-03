@@ -39,47 +39,6 @@
 .drink-info:hover {
     background-color: #4b4244;
 }
-.drink-popup {
-    position: fixed;
-    inset: 0;
-    backdrop-filter: blur(2.5px);
-    display: grid;
-    place-items: center;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: 10; 
-    transition: opacity .4s, visibility .4s;
-}
-.close-popup {
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -25px;
-    cursor: pointer;
-}
-.card-popup {
-    position: relative;
-    border: 2px solid var(--txt2);
-    border-radius: 7px;
-    background: linear-gradient(to right, #1d171773,
-    #0c0809be,  #1d171773);
-    padding: 2rem 2rem;
-    transform: rotateX(90deg);
-    transition: transform .2s;
-}
-.show-popup {
-    opacity: 1;
-    visibility: initial;
-    pointer-events: initial;
-}
-.show-popup .card-popup {
-    transform: rotateX(0deg);
-}
-#top-icon {
-    position: absolute;
-    margin-top: -4rem;
-}
-
 .card-link {
     display: inline-block;
     padding: 8px 16px;
@@ -93,6 +52,59 @@
     background-color: #4b4244;
 }
 
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
+    .section {
+        margin-top: 5rem;
+    }
+    .logo {
+        width: 150px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 50px;
+    }
+    .drink-popup {
+        position: fixed;
+        inset: 0;
+        backdrop-filter: blur(2.5px);
+        display: grid;
+        place-items: center;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 10; 
+        transition: opacity .4s, visibility .4s;
+    }
+    .close-popup {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: -25px;
+        cursor: pointer;
+    }
+    .card-popup {
+        position: relative;
+        border: 2px solid var(--txt2);
+        border-radius: 7px;
+        background: linear-gradient(to right, #1d171773,
+        #0c0809be,  #1d171773);
+        padding: 2rem 2rem;
+        transform: rotateX(90deg);
+        transition: transform .2s;
+    }
+    .show-popup {
+        opacity: 1;
+        visibility: initial;
+        pointer-events: initial;
+    }
+    .show-popup .card-popup {
+        transform: rotateX(0deg);
+    }
+    #top-icon {
+        position: absolute;
+        margin-top: -4rem;
+    }
+}
+
 /* lg = (large) */
 @media (min-width: 1024px) {
     .container {
@@ -102,7 +114,6 @@
         font-size: var(--size-3xl);
     }
 }
-
 
 /* xl = (extra large) */
 @media (min-width: 1280px) {
