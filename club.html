@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crown Coffee - Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/coffeeIcon.png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/club.css">
+    <link rel="stylesheet" href="stylesheets/mobile-nav.css">
+</head>
+<body>
+    <a href="index.html">
+        <img class="logo" src="images/crownCoffeeLogo.png" alt="Crown Coffee Logo">
+    </a>
+    <header class="header container">
+        <nav>
+            <ul class="header-menu">
+                <li><a class="header-link" href="index.html">Home</a></li>
+                <li><a class="header-link" href="coffee.html">Our Coffee</a></li>
+                <li><a class="header-link" href="coffeeGuide.html">Coffee Guide</a></li>
+                <li><a class="header-link" href="menu.html">Menu</a></li>
+                <li><a class="header-link" href="club.html">Club</a></li>
+                <li><a class="header-link" href="contact.html">Contact</a></li>
+            </ul>
+            <button id="header-bars" class="remove-btn">☰</button>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav">
+            <nav>
+                <ul id="mobile-menu">
+                    <li id="close-mobile-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0
+                        -960 960 960" width="34px" fill="#e8eaed"><path d="m256-200-56-56
+                        224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56
+                        56-224-224-224 224Z"/></svg>
+                    </li>
+                    <li><a class="header-link" href="index.html">Home</a></li>
+                    <li><a class="header-link" href="coffee.html">Our Coffee</a></li>
+                    <li>
+                        <a class="header-link" href="coffeeGuide.html">Coffee Guide</a>
+                    </li>
+                    <li><a class="header-link" href="menu.html">Menu</a></li>
+                    <li><a class="header-link" href="club.html">Club</a></li>
+                    <li><a class="header-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End of Mobile Navbar -->
+    </header>
+    <main>
+        <img id="club-bg-img" src="images/clubBackground.jpg" alt="Club Background">
+        <img id="club-bg-img2" src="images/clubBackground2.jpg" alt="Club Background 2">
+        <section class="club container section">
+            <h1 id="club-title">Crown Coffee Subscription</h1>
+            <p id="club-desc">Prefer to enjoy your coffee at home? No problem! Sign up
+            for our Coffee Club and get the best coffee delivered right to your door.</p>
+            <form action="">
+                <label>Name</label>
+                <input type="text" name="fname" required="required"><br><br>
+                <label>Email</label>
+                <input type="email" name="email"><br><br>
+                <label>Password</label>
+                <input type="password" name="pwd" minlength="8" maxlength="25"
+                required="required"><br><br>
+                <label>Bean Type</label>
+                <select name="beantype">
+                    <option value="grounds">Grounds</option>
+                    <option value="whole">Whole</option>
+                    <option value="rounds">Rounds</option>
+                </select><br><br>
+                <fieldset>
+                <legend>Regular or Decaf?</legend>
+                <div class="club-container">
+                    <input type="radio" class="radio" name="caffeine" value="regular">
+                    <label>Regular</label><br>
+
+                    <input type="radio" class="radio" name="caffeine" value="decaf">
+                    <label>Decaf</label><br>
+                </div>
+                </fieldset><br>
+                <fieldset>
+                <legend>Type of Roast</legend>
+                    <div class="club-container">
+                        <input type="checkbox" class="checkbox" name="grogg"
+                        value="grogg">
+                        <label>Highlander Grogg</label><br>
+                        <input type="checkbox" class="checkbox" name="cinnamon"
+                        value="cinnamon">
+                        <label>Cinnamon Swirl</label><br>
+                        <input type="checkbox" class="checkbox" name="hazelnut"
+                        value="hazalnut">
+                        <label>Hazelnut Cream</label><br>
+                        <input type="checkbox" class="checkbox" name="vanilla"
+                        value="vanilla">
+                        <label>French Vanilla</label><br>
+                        <input type="checkbox" class="checkbox" name="blueberry"
+                        value="blueberry">
+                        <label>Blueberry Nut</label><br>
+                        <input type="checkbox" class="checkbox" name="caramel"
+                        value="caramel">
+                        <label>Banana Caramel</label><br>
+                        <input type="checkbox" class="checkbox" name="chocolate"
+                        value="chocolate">
+                        <label>Chocolate Cherry</label><br>
+                        <input type="checkbox" class="checkbox" name="toffee"
+                        value="toffee">
+                        <label>English Toffee</label><br>
+                        <input type="checkbox" class="checkbox" name="raspberry"
+                        value="raspberry">
+                        <label>Vanilla Raspberry</label><br>
+                    </div>
+                </fieldset><br>
+                <p>Additional Comments</p>
+                <textarea name="comments" max-width="400px"></textarea><br>
+                <div>
+                    <button class="club-btns" type="submit">Submit</button>
+                    <button class="club-btns" type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer section">
+        <a href="contact.html" id="hours-location">Hours and Location</a>
+        <div class="footer-links">
+            <a title="GitHub" href="https://github.com/Nero1889" target="_blank">
+                <img id="github" src="images/github.png" alt="GitHub Logo">
+            </a>
+            <a title="Gmail" href="mailto:mceclipse1889@gmail.com">
+                <img id="gmail" src="images/gmail.png" alt="Gmail Logo">
+            </a>
+        </div>
+        <h3 id="footer-title">~ Made and Edited By: Raul Luna ~</h3>
+    </footer>
+    <script src="js-docs/index.js"></script>
+    <script src="js-docs/animations.js"></script>
+</body>
+</html>

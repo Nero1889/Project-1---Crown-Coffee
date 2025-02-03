@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#mobile-nav {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+#mobile-nav ul {
+    list-style: none;
+}
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(#3f281bd8, #0c0805e7);
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    line-height: 40px;
+}
+#mobile-nav {
+    display: none;
+}
+
+/* md = (medium) */
+@media (min-width: 768px) {
+    #mobile-nav {
+        display: none;
+    }
+}

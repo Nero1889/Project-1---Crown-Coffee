@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crown Coffee - Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/coffeeIcon.png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/menu.css">
+    <link rel="stylesheet" href="stylesheets/mobile-nav.css">
+</head>
+<body>
+    <a href="index.html">
+        <img class="logo" src="images/crownCoffeeLogo.png" alt="Crown Coffee Logo">
+    </a>
+    <header class="header container">
+        <nav>
+            <ul class="header-menu">
+                <li><a class="header-link" href="index.html">Home</a></li>
+                <li><a class="header-link" href="coffee.html">Our Coffee</a></li>
+                <li><a class="header-link" href="coffeeGuide.html">Coffee Guide</a></li>
+                <li><a class="header-link" href="menu.html">Menu</a></li>
+                <li><a class="header-link" href="club.html">Club</a></li>
+                <li><a class="header-link" href="contact.html">Contact</a></li>
+            </ul>
+            <button id="header-bars" class="remove-btn">☰</button>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav">
+            <nav>
+                <ul id="mobile-menu">
+                    <li id="close-mobile-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0
+                        -960 960 960" width="34px" fill="#e8eaed"><path d="m256-200-56-56
+                        224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56
+                        56-224-224-224 224Z"/></svg>
+                    </li>
+                    <li><a class="header-link" href="index.html">Home</a></li>
+                    <li><a class="header-link" href="coffee.html">Our Coffee</a></li>
+                    <li>
+                        <a class="header-link" href="coffeeGuide.html">Coffee Guide</a>
+                    </li>
+                    <li><a class="header-link" href="menu.html">Menu</a></li>
+                    <li><a class="header-link" href="club.html">Club</a></li>
+                    <li><a class="header-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End of Mobile Navbar -->
+    </header>
+    <main>
+        <section class="breakfast container section" id="breakfast">
+            <h1 class="menu-title">Breakfast</h1>
+            <h2 id="breakfast-hours">Served 6am - 7pm</h2>
+            <nav class="menu-nav">
+                <a href="#breakfast">Breakfast</a>
+                <a href="#sandwiches">Sandwiches</a>
+                <a href="#pizza">Pizza</a>
+                <a href="#desserts">Desserts</a>
+            </nav>
+            <div class="main-container">
+                <div class="breakfast-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/avocadoToast.jpg"
+                        alt="Avocado Toast">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Avocado Toast</h2>
+                        <p class="card-desc">Mashed avocado, pickled egg, in season
+                        veggies, everything bagel sprinkle on a thick slice of our
+                        cardinal bread.</p>
+                        <p class="card-price">$6.50</p>
+                    </div>
+                </div>
+                <div class="breakfast-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/burrito.jpg"
+                        alt="Burrito">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Regular Burrito</h2>
+                        <p class="card-desc">Egg, bacon, cheddar on a flour tortilla.</p>
+                        <p class="card-price">$5.95</p>
+                    </div>
+                </div>
+                <div class="breakfast-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/deluxeBurrito.png"
+                        alt="Deluxe Burrito">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Deluxe Burrito</h2>
+                        <p class="card-desc">Egg, breakfast sausage, roasted potato,
+                        cheddar on a flour tortilla.</p>
+                        <p class="card-price">$6.25</p>
+                    </div>
+                </div>
+                <div class="breakfast-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/sunriseSandwhich.jpg"
+                        alt="Sunrise Sandwich">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Sunrise Sandwich</h2>
+                        <p class="card-desc">Canadian bacon, egg, and cheddar on a
+                        toasted English Muffin.</p>
+                        <p class="card-price">$4.50</p>
+                    </div>
+                </div>
+                <div class="breakfast-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/bakerSandwich.png"
+                        alt="Baker Sandwich">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Baker Sandwich</h2>
+                        <p class="card-desc">Bacon, avocado, brick cheese, and egg on
+                        farmers bread. Chipotle mayo on the side.</p>
+                        <p class="card-price">$6.95</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sandwiches container section" id="sandwiches">
+            <h1 class="menu-title">Sandwiches</h1>
+            <div class="main-container">
+                <div class="sandwich-container">
+                    <div class="img-container">
+                        <img class="sandwich-imgs"
+                        src="images/southwestOrganicChicken.jpg"
+                        alt="Southwest Organic Chicken">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Southwest Organic Chicken</h2>
+                        <p class="card-desc">Roasted red pepper, pepper jack cheese with
+                        chipotle mayo on ciabatta.</p>
+                        <p class="card-price">$7.50</p>
+                    </div>
+                </div>
+                <div class="sandwich-container">
+                    <div class="img-container">
+                        <img class="sandwich-imgs" src="images/turkeyCheddar.jpg"
+                        alt="Turkey Cheddar">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Turkey and Cheddar</h2>
+                        <p class="card-desc">Roasted turkey and cheddar with pesto aioli
+                        on ciabatta bread.</p>
+                        <p class="card-price">$4.95</p>
+                    </div>
+                </div>
+                <div class="sandwich-container">
+                    <div class="img-container">
+                        <img class="sandwich-imgs" src="images/hamAndSwiss.jpg"
+                        alt="Ham and Swiss">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Ham and Swiss</h2>
+                        <p class="card-desc">Ham and swiss cheese with honeycup mustard
+                        spread on ciabatta.</p>
+                        <p class="card-price">$4.95</p>
+                    </div>
+                </div>
+                <div class="sandwich-container">
+                    <div class="img-container">
+                        <img class="sandwich-imgs" src="images/grilledCheese.jpg" 
+                        alt="Grilled Cheese">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Grilled Cheese</h2>
+                        <p class="card-desc">Topped with American and cheddar cheese on
+                        buttered ciabatta.</p>
+                        <p class="card-price">$4.25</p>
+                    </div>
+                </div>
+                <div class="sandwich-container">
+                    <div class="img-container">
+                        <img class="sandwich-imgs" src="images/veggieDelight.jpeg"
+                        alt="Veggie Delight">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Veggie Delight</h2>
+                        <p class="card-desc">Roasted peppers & artichokes with pesto on
+                        multigrain focaccia bread.</p>
+                        <p class="card-price">$5.25</p>
+                    </div>
+                </div>
+        </section>
+        <section class="pizza container section" id="pizza">
+            <h1 class="menu-title">Pizza</h1>
+            <h2 id="pizza-desc">Pizzas start with traditional thin crust, our<br>
+            home-made sauce, and mozzarella cheese. Because<br>everything is made fresh
+            just for you we can make<br>the crust thinner or thicker.<br><br>Pizza sizes
+            are: 12", 14", 16", 18" (inches in diameter)</h2>
+            <h1 id="toppings">Toppings:</h1>
+            <div class="main-container">
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" 
+                        src="images/sausagePizza.jpg" alt="Sausage Pizza">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Sausage</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/pepperoni.jpg"
+                        alt="Pepperoni">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Pepperoni</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/canadianBacon.jpg"
+                        alt="Canadian Bacon">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Canadian Bacon</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/mushrooms.jpg" 
+                        alt="Mushrooms">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Mushroom</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/onions.jpg"
+                        alt="Onions">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Onion</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/greenPeppers.jpg"
+                        alt="Green Peppers">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Green Pepper</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/greenOlives.jpg"
+                        alt="Green Olives">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Green Olive</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/blackOlives.png"
+                        alt="Black Olives">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Black Olive</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/tomato.png" alt="Tomato">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Tomato</h2>
+                    </div>
+                </div>
+                <div class="pizza-container">
+                    <div class="img-container">
+                        <img class="pizza-imgs" src="images/pineapple.jpg"
+                        alt="Pineapple">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Pineapple</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="desserts container section" id="desserts">
+            <h1 class="menu-title">Gelato, Sorbetto<br>and Ice Cream</h1>
+            <div class="main-container">
+                <div class="desserts-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/gelato.jpg" alt="Gelato">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Gelato</h2>
+                        <p class="card-desc">The Italian word for ice cream, is dense,
+                        creamy & intensely flavored due to less air being mixed in and
+                        has a lower fat content compared to regular ice cream.</p>
+                        <p class="card-price">$6.50</p>
+                    </div>
+                </div>
+                <div class="desserts-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/sorbettoSherbet.jpg"
+                        alt="Sorbetto and Sherbet">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Sorbetto or Sherbet</h2>
+                        <p class="card-desc">Made with fruit and water, contains no
+                        dairy and is usually fat-free..</p>
+                        <p class="card-price">$5.95</p>
+                    </div>
+                </div>
+                <div class="desserts-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/vanillaIceCream.jpg"
+                        alt="Vanilla Ice Cream">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Old Fashioned Vanilla Ice Cream </h2>
+                        <p class="card-desc">Made on-site using premium, all-natural
+                        ingredients.</p>
+                        <p class="card-price">$6.25</p>
+                    </div>
+                </div>
+                <div class="desserts-container">
+                    <div class="img-container">
+                        <img class="breakfast-imgs" src="images/milkshakes.jpg"
+                        alt="Milkshakes">
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Milkshakes</h2>
+                        <p class="card-desc">Customer favorite! Creamy & rich, are also
+                        made to order.</p>
+                        <p class="card-price">$4.50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <a id="top-icon" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" height="44px"
+            viewBox="0 -960 960 960" width="44px" fill="#e8eaed">
+            <path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40
+            240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54
+            127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5
+            156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0
+            227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227
+            93Zm0-320Z"/></svg>
+        </a>
+        <a href="contact.html" id="hours-location">Hours and Location</a>
+        <div class="footer-links">
+            <a title="GitHub" href="https://github.com/Nero1889" target="_blank">
+                <img id="github" src="images/github.png" alt="GitHub Logo">
+            </a>
+            <a title="Gmail" href="mailto:mceclipse1889@gmail.com">
+                <img id="gmail" src="images/gmail.png" alt="Gmail Logo">
+            </a>
+        </div>
+        <h3 id="footer-title">~ Made and Edited By: Raul Luna ~</h3>
+    </footer>
+    <script src="js-docs/index.js"></script>
+    <script src="js-docs/animations.js"></script>
+</body>
+</html>
