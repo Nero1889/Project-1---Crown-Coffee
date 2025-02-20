@@ -1,15 +1,13 @@
 /* Mobile Menu */
 const HEADER_BARS = document.querySelector("#header-bars");
+const MOBILE_NAVBAR = document.querySelector("#mobile-nav");
+const CLOSE_MOBILE_MENU = document.querySelector("#close-mobile-menu");
 
 HEADER_BARS.onclick = () => {
-    const MOBILE_NAVBAR = document.querySelector("#mobile-nav");
     MOBILE_NAVBAR.style.display = "block";
 }
 
-const CLOSE_MOBILE_MENU = document.querySelector("#close-mobile-menu");
-
 CLOSE_MOBILE_MENU.onclick = () => {
-    const MOBILE_NAVBAR = document.querySelector("#mobile-nav");
     MOBILE_NAVBAR.style.display = "none";
 }
 
@@ -20,11 +18,9 @@ const CLOSE_POPUP = document.querySelectorAll(".close-popup");
 
 let activeDrinkPopup = (popupClick) => {
     DRINK_POPUP.forEach((popup, i) => {
-        if (i === popupClick) {
-            popup.classList.add("show-popup");
-        } else {
-            popup.classList.remove("show-popup");
-        }
+        i === popupClick
+        ? popup.classList.add("show-popup") 
+        : popup.classList.remove("show-popup");
     });
 };
 
